@@ -1,0 +1,273 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@import '@fontsource-variable/source-serif-4/wght.css';
+@import '@fontsource-variable/source-serif-4/wght-italic.css';
+@import '@fontsource-variable/manrope/wght.css';
+@import '@fontsource-variable/ibm-plex-sans';
+@import '@fontsource-variable/eb-garamond';
+@import '@fontsource-variable/eb-garamond/wght-italic.css';
+
+body {
+	/* font-family: 'EB Garamond Variable', serif; */
+	/* font-family: 'Source Serif 4 Variable', serif; */
+	/* font-family: 'Manrope Variable', sans-serif; */
+	 font-family: 'IBM Plex Sans Variable', sans-serif;
+	font-weight: var(--font-weight-base);
+	background-color: var(--color-background-base);
+	color: var(--color-text-base);
+	letter-spacing: 0.025em; /* wide tracking für Manrope Light */
+}
+
+p {
+	margin-bottom: 1rem; /* Standard-Abstand für Absätze */
+}
+
+@theme {
+	--font-family-base: 'IBM Plex Sans Variable', sans-serif;
+	--font-family-heading: 'EB Garamond Variable', serif;
+	--font-family-logo: 'EB Garamond Variable', serif;
+
+	--font-weight-base: 300;
+	--font-weight-heading: 500;
+	--font-weight-logo: 500;
+
+	--color-background-header: #fbfaf8;
+	--color-background-base: #f6f1eb;
+	--color-background-footer: #ffffff;
+
+	--color-text-base: #444444;
+	--color-text-hover: #A551FF; /* Hellviolett als einheitliche Hover-Farbe */
+
+	/* Überschriften-Definitionen */
+	--heading-h1-size-mobile: 1.5rem; /* 28px mobile */
+	--heading-h1-size-desktop: 1.5rem; /* 32px desktop */
+	--heading-h1-weight: 500;
+	--heading-h1-line-height: 1.2;
+	--heading-h1-margin-bottom: 1.5rem;
+
+	--heading-h2-size-mobile: 1.25rem; /* 30px */
+	--heading-h2-size-desktop: 1.25rem; /* 30px */
+	--heading-h2-weight: 500;
+	--heading-h2-line-height: 1.3;
+	--heading-h2-margin-bottom: 1rem;
+
+	--heading-h3-size-mobile: 1rem; /* 24px */
+	--heading-h3-size-desktop: 1rem; /* 24px */
+	--heading-h3-weight: 500;
+	--heading-h3-line-height: 1.4;
+	--heading-h3-margin-bottom: 0.75rem;
+
+	/* kleinere schriftgröße für die menüeinträge */
+	--text-sm: 0.925rem; /* 14px */
+	--text-base: 1rem; /* 16px */
+	--text-lg: 1.125rem; /* 18px */
+	--text-xl: 1.25rem; /* 20px */
+	--text-2xl: 1.5rem; /* 24px */
+	--text-3xl: 1.875rem; /* 30px */
+	--text-4xl: 2.25rem; /* 36px */
+	--text-5xl: 3rem; /* 48px */
+}
+
+/* Container-Klasse für konsistente Margins */
+.content-container {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem; /* px-4 mobile */
+	padding-right: 1rem; /* px-4 mobile */
+}
+
+@media (min-width: 768px) {
+	.content-container {
+		padding-left: 1.5rem; /* px-6 desktop */
+		padding-right: 1.5rem; /* px-6 desktop */
+	}
+}
+
+/* Schmalere Container-Klasse für bessere Lesbarkeit von Text */
+.content-container-narrow {
+	max-width: 720px; /* entspricht max-w-2xl */
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem; /* px-4 mobile */
+	padding-right: 1rem; /* px-4 mobile */
+}
+
+@media (min-width: 768px) {
+	.content-container-narrow {
+		padding-left: 1.5rem; /* px-6 desktop */
+		padding-right: 1.5rem; /* px-6 desktop */
+	}
+}
+
+/* Noch schmalere Container-Klasse für zentrierte einspaltige Inhalte */
+.content-container-centered {
+	max-width: 640px; /* entspricht max-w-2xl */
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2rem; /* px-4 mobile */
+	padding-right: 2rem; /* px-4 mobile */
+	text-align: center; /* zentriert den Text */
+}
+
+@media (min-width: 768px) {
+	.content-container-centered {
+		padding-left: 3rem; /* px-6 desktop */
+		padding-right: 3rem; /* px-6 desktop */
+	}
+}
+
+/* Full-width Klasse für Elemente ohne Margins (z.B. Hero-Images) */
+.content-full-width {
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+}
+
+/* Überschriften-Klassen definieren */
+.heading-h1 {
+	font-family: var(--font-family-heading);
+	font-size: var(--heading-h1-size-mobile); 
+	font-weight: var(--heading-h1-weight);
+	line-height: var(--heading-h1-line-height);
+	margin-bottom: var(--heading-h1-margin-bottom);
+	color: var(--color-text-base);
+	letter-spacing: normal; /* Source Serif normal tracking */
+}
+
+@media (min-width: 768px) {
+	.heading-h1 {
+		font-size: var(--heading-h1-size-desktop);
+	}
+}
+
+.heading-h2 {
+	font-family: var(--font-family-heading);
+	font-size: var(--heading-h2-size-mobile); /* 24px mobile */
+	font-weight: var(--heading-h2-weight);
+	line-height: var(--heading-h2-line-height);
+	margin-bottom: var(--heading-h2-margin-bottom);
+	color: var(--color-text-base);
+	letter-spacing: normal; /* Source Serif normal tracking */
+}
+
+@media (min-width: 768px) {
+	.heading-h2 {
+		font-size: var(--heading-h2-size-desktop); /* 30px desktop */
+	}
+}
+
+.heading-h3 {
+	font-family: var(--font-family-heading);
+	font-size: var(--heading-h3-size-mobile); /* 20px mobile */
+	font-weight: var(--heading-h3-weight);
+	line-height: var(--heading-h3-line-height);
+	margin-bottom: var(--heading-h3-margin-bottom);
+	color: var(--color-text-base);
+	letter-spacing: normal; /* Source Serif normal tracking */
+}
+
+@media (min-width: 768px) {
+	.heading-h3 {
+		font-size: var(--heading-h3-size-desktop); /* 24px desktop */
+	}
+}
+
+.logo-text {
+	font-family: var(--font-family-logo);
+	font-weight: var(--font-weight-logo);
+	font-size: 1.125rem; /* 18px mobile */
+	line-height: 1.2;
+	color: var(--color-text-base);
+	font-style: italic;
+	letter-spacing: -0.02em; /* Source Serif normal tracking */
+}
+
+@media (min-width: 768px) {
+	.logo-text {
+		font-size: 1.25rem; /* 20px desktop */
+	}
+}
+
+.logo-text:hover {
+	color: var(--color-text-hover); /* Hover-Farbe für Logo */
+}
+
+/* Responsive Text-Klassen */
+.text-responsive-sm {
+	font-size: 0.75rem; /* 12px mobile */
+	letter-spacing: 0.025em; /* wide tracking */
+}
+
+@media (min-width: 768px) {
+	.text-responsive-sm {
+		font-size: var(--text-sm); /* 14px desktop */
+	}
+}
+
+.text-responsive-base {
+	font-size: 0.875rem; /* 14px mobile */
+	letter-spacing: 0.025em; /* wide tracking */
+}
+
+@media (min-width: 768px) {
+	.text-responsive-base {
+		font-size: var(--text-base); /* 16px desktop */
+	}
+}
+
+.text-responsive-lg {
+	font-size: var(--text-base); /* 16px mobile */
+	letter-spacing: 0.025em; /* wide tracking */
+}
+
+@media (min-width: 768px) {
+	.text-responsive-lg {
+		font-size: var(--text-lg); /* 18px desktop */
+	}
+}
+
+/* Burger Menu Styles */
+.burger-line {
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	background-color: var(--color-text-base);
+	margin: 2px 0;
+	transform-origin: center;
+	position: relative;
+}
+
+/* Automatisches wide tracking für Manrope Light (300) */
+*[style*='font-weight: 300'],
+.font-light,
+[class*='font-weight-base'] {
+	letter-spacing: 0.025em; /* wide tracking */
+}
+
+/* Manrope Medium und Bold - normal tracking */
+*[style*='font-weight: 500'],
+*[style*='font-weight: 600'],
+*[style*='font-weight: 700'],
+.font-medium,
+.font-semibold,
+.font-bold {
+	letter-spacing: normal; /* normal tracking für Medium/Bold */
+}
+
+/* Source Serif - immer normal tracking */
+.heading-h1,
+.heading-h2,
+.heading-h3 {
+	letter-spacing: normal !important; /* Source Serif normal tracking */
+}
+
+/* Manrope Light spezifisch */
+.text-text-base,
+.text-responsive-base,
+.text-responsive-lg,
+.text-responsive-sm {
+	letter-spacing: 0.025em; /* wide tracking für alle Basis-Texte (Light) */
+}

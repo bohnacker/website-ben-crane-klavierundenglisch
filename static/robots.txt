@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Hauptseiten
+Allow: /
+Allow: /ueber-mich
+Allow: /preise
+Allow: /kontakt
+
+# Rechtliche Seiten (weniger relevant für SEO)
+Allow: /impressum
+Allow: /datenschutz
+
+# Sitemap
+Sitemap: https://markus-redet.de/sitemap.xml
+
+# Crawler-freundliche Einstellungen
+Crawl-delay: 1

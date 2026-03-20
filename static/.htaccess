@@ -1,0 +1,11 @@
+# Weiterleitung von www zu non-www
+RewriteEngine On
+
+# WWW zu non-WWW Weiterleitung
+RewriteCond %{HTTP_HOST} ^www\.markus-redet\.de$ [NC]
+RewriteRule ^(.*)$ https://markus-redet.de/$1 [R=301,L]
+
+# HTTPS erzwingen (nur für die Hauptdomain)
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^markus-redet\.de$ [NC]
+RewriteRule ^(.*)$ https://markus-redet.de/$1 [R=301,L]

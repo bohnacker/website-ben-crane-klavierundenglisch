@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "https://www.markus-redet.de/(.*)",
+      "destination": "https://markus-redet.de/$1",
+      "statusCode": 301
+    }
+  ]
+}
