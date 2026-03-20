@@ -7,15 +7,15 @@
 
 	// Menüeinträge
 	const nav = [
-		{ name: 'Über mich', href: './ueber-mich' },
-		{ name: 'Freie Trauung', href: './freie-trauung' },
-		{ name: 'Kinderwillkommensfest', href: './kinderwillkommensfest' },
-		{ name: 'Eheerneuerung', href: './eheerneuerung' },
-		{ name: 'Abschiedsfeier', href: './abschiedsfeier' },
-		{ name: 'Medien & Seminare', href: './medien-seminare' },
-		{ name: 'Leistungen & Preise', href: './preise' },
-		{ name: 'Affiliates', href: './affiliates' },
-		{ name: 'Kontakt', href: './kontakt' }
+		{ name: 'Über mich', htmlName: 'Über<br>mich', href: './ueber-mich' },
+		{ name: 'Freie Trauung', htmlName: 'Freie<br>Trauung', href: './freie-trauung' },
+		{ name: 'Kinderwillkommensfest', htmlName: 'Kinder-<br>willkommens-<br>fest', href: './kinderwillkommensfest' },
+		{ name: 'Eheerneuerung', htmlName: 'Ehe-<br>erneuerung', href: './eheerneuerung' },
+		{ name: 'Abschiedsfeier', htmlName: 'Abschieds-<br>feier', href: './abschiedsfeier' },
+		{ name: 'Medien & Seminare', htmlName: 'Medien &<br>Seminare', href: './medien-seminare' },
+		{ name: 'Leistungen & Preise', htmlName: 'Leistungen<br>& Preise', href: './preise' },
+		{ name: 'Partner', htmlName: 'Partner', href: './affiliates' },
+		{ name: 'Kontakt', htmlName: 'Kontakt', href: './kontakt' }
 	];
 
 	function toggleMenu() {
@@ -28,6 +28,8 @@
 </script>
 
 <div class="flex min-h-screen flex-col">
+	<!-- Goldener Akzent-Streifen ganz oben -->
+	<div class="h-2 w-full bg-text-hover"></div>
 	<header class="bg-background-header sticky top-0 z-50 shadow">
 		<nav class="content-container flex items-center justify-between px-4 py-3 md:py-1">
 			<!-- Version mit Logo und Name -->
@@ -37,10 +39,7 @@
 				onclick={closeMenu}
 			>
 				<img src="/images/Kranich_freigestellt.png" alt="Logo Kranich" class="h-10 md:h-12 w-auto object-contain" />
-				<span>Benjamin <span
-					class="underline-target relative top-[-0.1em] underline decoration-text-hover decoration-2 transition-colors"
-					>Crane</span
-				></span>
+				<span class="text-text-hover font-medium">Benjamin Crane</span>
 			</a>
 
 			<!-- Version mit Sprechblasen-Unterstreichung -->
@@ -64,21 +63,22 @@
 			</a> -->
 
 			<!-- Desktop Navigation -->
-			<ul class="hidden space-x-2 sm:flex">
+			<ul class="hidden space-x-0.5 md:space-x-1 lg:flex items-center">
 				{#each nav as item}
 					<li>
 						<a
 							href={item.href}
-							class="text-text-base hover:text-text-hover block px-3 py-4 text-xs font-medium tracking-wider uppercase transition-colors"
-							>{item.name}</a
+							class="text-text-base hover:text-text-hover block px-2 py-2 text-xs font-medium tracking-wider uppercase text-center leading-tight transition-colors"
 						>
+							{@html item.htmlName}
+						</a>
 					</li>
 				{/each}
 			</ul>
 
 			<!-- Mobile Burger Button -->
 			<button
-				class="relative flex h-6 w-6 flex-col items-center justify-center focus:outline-none sm:hidden"
+				class="relative flex h-6 w-6 flex-col items-center justify-center focus:outline-none lg:hidden"
 				onclick={toggleMenu}
 				aria-label="Menu toggle"
 			>
@@ -99,8 +99,8 @@
 
 		<!-- Mobile Navigation Menu -->
 		<div
-			class="sm:hidden {isMenuOpen
-				? 'max-h-64 opacity-100'
+			class="lg:hidden {isMenuOpen
+				? 'max-h-[600px] opacity-100'
 				: 'max-h-0 opacity-0'} overflow-hidden border-t border-gray-200 bg-white transition-all duration-300"
 		>
 			<ul class="flex flex-col py-4">
@@ -122,7 +122,7 @@
 		<div
 			in:fade={{ duration: 400 }}
 			out:fade={{ duration: 400 }}
-			class="fixed inset-0 z-40 bg-black/20 backdrop-blur-xs sm:hidden"
+			class="fixed inset-0 z-40 bg-black/20 backdrop-blur-xs lg:hidden"
 			onclick={closeMenu}
 			onkeydown={(e) => e.key === 'Escape' && closeMenu()}
 			role="button"
@@ -135,7 +135,7 @@
 		{@render children()}
 	</main>
 
-	<footer class="bg-background-footer text-text-base mt-auto border-t border-gray-200">
+	<footer class="bg-background-footer text-text-base mt-auto border-t-2 border-text-hover">
 		<div
 			class="content-container flex flex-col items-center justify-between gap-2 px-4 py-3 text-xs md:flex-row md:text-sm"
 		>

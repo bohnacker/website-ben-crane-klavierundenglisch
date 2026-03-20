@@ -12,19 +12,17 @@
 
 <section class="content-container flex flex-col items-center gap-x-8">
 	<div class="flex w-full flex-col gap-x-8 md:flex-row">
-		<div class="mb-8 flex w-full md:w-1/2">
-			<div class="bg-background-footer flex rounded-lg border border-gray-200 p-3 shadow-sm">
-				<div class="flex w-full overflow-hidden rounded">
-					<img
-						src="./images/Ben_bearbeitet_extended.JPG"
-						alt="Benjamin Crane"
-						class="h-auto w-full object-cover"
-					/>
-				</div>
-			</div>
+		<div class="relative mb-12 flex w-full md:w-5/12 mr-0 md:mr-10 items-start">
+			<!-- Gold accent behind image -->
+			<div class="absolute inset-0 bg-text-hover transform translate-x-3 translate-y-4 md:translate-x-5 md:translate-y-6"></div>
+			<img
+				src="./images/Ben_bearbeitet_extended.JPG"
+				alt="Benjamin Crane"
+				class="relative z-10 h-auto w-full object-cover shadow-lg border border-gray-100"
+			/>
 		</div>
 
-		<div class="w-full md:w-1/2">
+		<div class="w-full md:w-7/12">
 			<div class="text-text-base space-y-4 text-left text-sm tracking-wide md:text-base">
 				<p>
 					Mein Name ist <span class="font-bold tracking-normal">Benjamin Crane</span> und ich möchte Euch Flügel verleihen für Euer ganz besonderes Event. 

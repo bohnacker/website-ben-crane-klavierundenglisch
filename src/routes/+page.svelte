@@ -63,8 +63,6 @@
 
 <!-- Start section with centered headline and a first centered paragraph -->
 <section class="content-container-centered my-8 flex flex-col items-center gap-6">
-	<img src="/images/Kranich_freigestellt.png" alt="Kranich Logo" class="h-32 md:h-48 w-auto object-contain opacity-90 drop-shadow-sm" />
-	
 	<div
 		class="font-family-heading text-center text-xl font-light tracking-normal italic md:text-3xl"
 	>
@@ -73,25 +71,24 @@
 		</p>
 	</div>
 
+	<img src="/images/Kranich_freigestellt.png" alt="Kranich Logo" class="h-32 md:h-48 w-auto object-contain opacity-90 drop-shadow-sm" />
+
 	<hr class="border-text-base mx-auto my-6 w-1/2 border-t opacity-50" />
 </section>
 
 <section class="content-container my-6 flex flex-col items-center gap-8">
-	<h2 class="heading-h2 mb-4 text-center md:text-3xl">
+	<!-- <h2 class="heading-h2 mb-4 text-center md:text-3xl">
 		Für alle wichtigen Wege – mit Liebe und Vertrauen
-	</h2>
+	</h2> -->
 
 	<div class="flex w-full flex-col-reverse items-center gap-8 md:flex-row">
 		<!-- Container für Zitat oder Bild (links) -->
-		<div class="flex w-full justify-center md:w-1/2">
-			<div
-				class="bg-background-footer flex min-h-[200px] items-center justify-center rounded-lg border border-gray-200 p-6 shadow-sm"
-			>
-				<blockquote class="text-text-base font-family-heading text-center italic">
-					<p class="mb-2 text-xl md:text-2xl">
-						„Ob auf Deutsch oder auf Englisch begleite ich Euch gerne durch die wichtigsten Ereignisse Eures Lebens mit Einfühlungsvermögen und humour, Leidenschaft und time for you."
-					</p>
-					<cite class="text-sm opacity-75">— Benjamin Crane</cite>
+		<div class="flex w-full justify-center md:w-1/2 md:pr-10">
+			<div class="py-8 border-y border-text-hover/30 w-full flex flex-col justify-center my-4 md:my-0">
+				<blockquote class="text-text-base font-family-heading text-center italic text-[1.35rem] leading-relaxed md:text-2xl border-none pl-0 bg-transparent">
+					„Ob auf Deutsch oder auf Englisch begleite ich Euch gerne durch die wichtigsten Ereignisse Eures Lebens mit Einfühlungsvermögen und humour, Leidenschaft und time for you."
+					
+					<cite class="block mt-6 text-sm font-sans not-italic uppercase tracking-widest text-text-hover opacity-90">— Benjamin Crane</cite>
 				</blockquote>
 			</div>
 		</div>

@@ -18,6 +18,19 @@ p {
 	margin-bottom: 1rem; /* Standard-Abstand für Absätze */
 }
 
+/* Globally improve blockquotes to feature the highlight color */
+blockquote {
+	border-left: 4px solid var(--color-text-hover);
+	padding-left: 1.5rem;
+}
+
+/* Update horizontal dividers */
+hr.border-t {
+	border-color: var(--color-text-hover) !important;
+	border-top-width: 2px !important;
+	opacity: 0.5 !important;
+}
+
 @theme {
 	--font-family-base: 'IBM Plex Sans Variable', sans-serif;
 	--font-family-heading: 'EB Garamond Variable', serif;
@@ -28,8 +41,8 @@ p {
 	--font-weight-logo: 500;
 
 	--color-background-header: #ffffff;
-	--color-background-base: #f8fafc;
-	--color-background-footer: #f1f5f9;
+	--color-background-base: #fbf7f1;
+	--color-background-footer: #ffffff;
 
 	--color-text-base: #0f172a;
 	--color-text-hover: #CD9A5B; /* Gold als einheitliche Hover-Farbe */
