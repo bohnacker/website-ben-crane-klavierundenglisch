@@ -2,41 +2,38 @@
 </script>
 
 <svelte:head>
-	<title>Markus Bohnacker - Freie Trauungen, Taufen & Abschiedsfeiern in Stuttgart</title>
-	<meta name="description" content="Markus Bohnacker gestaltet freie Trauungen, Willkommensfeste (Taufen) und Abschiedsfeiern in Stuttgart und Umgebung. Persönlich, herzlich und mit viel Gefühl für den besonderen Moment." />
-	<meta name="keywords" content="Freie Trauung Stuttgart, Trauredner Stuttgart, Taufe, Willkommensfest, Abschiedsfeier, Markus Bohnacker, freier Redner, Hochzeit Stuttgart" />
-	<meta property="og:title" content="Markus Bohnacker - Freie Trauungen & Zeremonien in Stuttgart und Umgebung" />
-	<meta property="og:description" content="Persönliche freie Trauungen, Taufen und Abschiedsfeiern in Stuttgart. Mit Herz, Humor und professioneller Erfahrung." />
-	<meta property="og:url" content="https://markus-redet.de" />
-	<meta property="og:image" content="https://markus-redet.de/images/P1390113_web_extended_2.jpg" />
-	<link rel="canonical" href="https://markus-redet.de" />
+	<title>Benjamin Crane - Trauredner & Seelsorger aus Aalen</title>
+	<meta name="description" content="Benjamin Crane begleitet Euch bei Freien Trauungen, Kinderwillkommensfesten, Eheerneuerungen und Abschiedsfeiern mit Einfühlungsvermögen und Leidenschaft." />
+	<meta name="keywords" content="Freie Trauung Aalen, Trauredner Aalen, Trauerredner, Kinderwillkommensfest, Eheerneuerung, Benjamin Crane, freier Redner, Hochzeit Aalen" />
+	<meta property="og:title" content="Benjamin Crane - Trauredner & Trauerredner aus Aalen" />
+	<meta property="og:description" content="Persönliche freie Trauungen, Kinderwillkommensfeste und Abschiedsfeiern. Mit englischem Humor und Leidenschaft." />
+	<meta property="og:url" content="https://benjamin-crane.de" />
+	<meta property="og:image" content="https://benjamin-crane.de/images/Ben_bearbeitet_extended.JPG" />
+	<link rel="canonical" href="https://benjamin-crane.de" />
 	
 	<!-- Strukturierte Daten für Rich Snippets -->
 	{@html `<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": ["Person", "LocalBusiness"],
-		"name": "Markus Bohnacker",
-		"alternateName": ["Markus redet", "markus-redet.de"],
+		"name": "Benjamin Crane",
+		"alternateName": ["Benjamin Crane", "benjamin-crane.de"],
 		"jobTitle": "Freier Redner",
-		"description": "Freier Redner für Trauungen, Taufen und Abschiedsfeiern in Stuttgart und Umgebung. Persönlich, herzlich und mit viel Gefühl für den besonderen Moment.",
-		"url": "https://markus-redet.de",
+		"description": "Freier Redner für Trauungen, Kinderwillkommensfeste, Eheerneuerungen und Abschiedsfeiern in Aalen und Umgebung.",
+		"url": "https://benjamin-crane.de",
 		"image": [
-			"https://markus-redet.de/images/P1390113_web_extended_2.jpg"
-		],
-		"sameAs": [
-			"https://instagram.com/markus.redet"
+			"https://benjamin-crane.de/images/Ben_bearbeitet_extended.JPG"
 		],
 		"address": {
 			"@type": "PostalAddress",
-			"addressLocality": "Stuttgart",
+			"addressLocality": "Aalen",
 			"addressRegion": "Baden-Württemberg",
 			"addressCountry": "DE"
 		},
 		"areaServed": [
 			{
 				"@type": "City",
-				"name": "Stuttgart"
+				"name": "Aalen"
 			},
 			{
 				"@type": "State",
@@ -46,14 +43,13 @@
 		"serviceType": [
 			"Freie Trauung",
 			"Hochzeitsrede",
-			"Taufe",
-			"Willkommensfest",
+			"Kinderwillkommensfest",
+			"Eheerneuerung",
 			"Abschiedsfeier",
 			"Trauerrede"
 		],
 		"priceRange": "€€",
-		"telephone": "+49",
-		"email": "info@markus-redet.de"
+		"email": "kontakt@benjamin-crane.de"
 	}
 	</script>`}
 </svelte:head>
@@ -61,20 +57,19 @@
 <!-- Hero Image - Full Width -->
 <img
 	src="./images/Ben_bearbeitet_extended.JPG"
-	alt="Profilbild"
+	alt="Profilbild Benjamin Crane"
 	class="h-56 max-h-56 w-full object-cover object-center md:h-[32rem] md:max-h-[32rem] lg:h-[36rem] lg:max-h-[36rem]"
 />
 
 <!-- Start section with centered headline and a first centered paragraph -->
-<section class="content-container-centered my-6 flex flex-col items-center gap-1">
-	<!-- <h1 class="heading-h1 mt-6 md:text-4xl">Ich bin Markus und rede für Euch!</h1> -->
-
+<section class="content-container-centered my-8 flex flex-col items-center gap-6">
+	<img src="/images/Kranich_freigestellt.png" alt="Kranich Logo" class="h-32 md:h-48 w-auto object-contain opacity-90 drop-shadow-sm" />
+	
 	<div
 		class="font-family-heading text-center text-xl font-light tracking-normal italic md:text-3xl"
 	>
 		<p>
-			Ich bin Markus Bohnacker. Ich mag es, Menschen mit Worten zu berühren – und gern auch mal zum
-			Lachen zu bringen.
+			Mein Name ist Benjamin Crane und ich möchte Euch Flügel verleihen für Euer ganz besonderes Event.
 		</p>
 	</div>
 
@@ -92,18 +87,12 @@
 			<div
 				class="bg-background-footer flex min-h-[200px] items-center justify-center rounded-lg border border-gray-200 p-6 shadow-sm"
 			>
-				<!-- Platzhalter für Zitat -->
 				<blockquote class="text-text-base font-family-heading text-center italic">
 					<p class="mb-2 text-xl md:text-2xl">
-						„Nichts ist schöner, als Liebe in all ihren Momenten zu feiern."
+						„Ob auf Deutsch oder auf Englisch begleite ich Euch gerne durch die wichtigsten Ereignisse Eures Lebens mit Einfühlungsvermögen und humour, Leidenschaft und time for you."
 					</p>
-					<cite class="text-sm opacity-75">— Markus Bohnacker</cite>
+					<cite class="text-sm opacity-75">— Benjamin Crane</cite>
 				</blockquote>
-
-				<!-- Alternative: Platzhalter für Bild -->
-				<!-- <div class="w-full h-48 bg-gray-200 rounded flex items-center justify-center text-gray-500">
-					<span>Bild-Platzhalter</span>
-				</div> -->
 			</div>
 		</div>
 
@@ -111,35 +100,36 @@
 		<div class="w-full md:w-1/2">
 			<div class="text-text-base space-y-4 text-left text-sm tracking-wide md:text-base">
 				<p>
-					Ich nehme mir Zeit, Euch kennenzulernen und Eure Geschichte zu hören. Denn nur so entsteht
-					eine Rede, die wirklich von Herzen kommt – ob humorvoll, feierlich oder tief berührend.
-					Mit Ehrlichkeit, Wärme und einer Prise Leichtigkeit begleite ich Euch durch jeden
-					besonderen Moment:
+					Ich freue mich auf Euch und Eure Geschichte! Als Euer Trauredner, Seelsorger, Laienprediger und Musiker gestalte ich Eure Feierlichkeiten mit:
 				</p>
 
 				<ul class="mt-6 space-y-3">
 					<li class="flex items-start">
 						<span class="text-text-hover mr-3 flex-shrink-0">•</span>
 						<div>
-							<strong class="font-medium tracking-normal">Trauungen</strong> – Eure Liebe feiern wir
-							so einzigartig wie Ihr selbst.
+							<strong class="font-medium tracking-normal">Freie Trauung</strong> – Eure Liebe in Dur- und Molltonarten feiern.
 						</div>
 					</li>
 
 					<li class="flex items-start">
 						<span class="text-text-hover mr-3 flex-shrink-0">•</span>
 						<div>
-							<strong class="font-medium tracking-normal">Willkommensfeste & Taufen</strong> – Ein neues
-							Leben mit liebevollen Worten, Freude und vielleicht einem kleinen Augenzwinkern willkommen
-							heißen.
+							<strong class="font-medium tracking-normal">Kinderwillkommensfest</strong> – Ein neues
+							Leben wunderschön und emotional begrüßen.
 						</div>
 					</li>
 
 					<li class="flex items-start">
 						<span class="text-text-hover mr-3 flex-shrink-0">•</span>
 						<div>
-							<strong class="font-medium tracking-normal">Abschiedsfeiern</strong> – Einen Raum für Abschied,
-							Trost und wertschätzende Erinnerungen schaffen – mit viel Einfühlungsvermögen.
+							<strong class="font-medium tracking-normal">Eheerneuerung</strong> – Nach Jahren der gemeinsamen Ehe einen Meilenstein gebührend feiern.
+						</div>
+					</li>
+
+					<li class="flex items-start">
+						<span class="text-text-hover mr-3 flex-shrink-0">•</span>
+						<div>
+							<strong class="font-medium tracking-normal">Abschiedsfeier</strong> – Einen Raum für heilende Erinnerungen schaffen – würdevoll und mitfühlend.
 						</div>
 					</li>
 				</ul>

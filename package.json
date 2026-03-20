@@ -27,8 +27,6 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/eb-garamond": "^5.2.7",
-		"@fontsource-variable/ibm-plex-sans": "^5.2.8",
-		"@fontsource-variable/manrope": "^5.2.8",
-		"@fontsource-variable/source-serif-4": "^5.2.9"
+		"@fontsource-variable/ibm-plex-sans": "^5.2.8"
 	}
 }

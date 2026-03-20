@@ -7,9 +7,14 @@
 
 	// Menüeinträge
 	const nav = [
-		// { name: 'Freie Trauung', href: './freie-trauung' },
 		{ name: 'Über mich', href: './ueber-mich' },
+		{ name: 'Freie Trauung', href: './freie-trauung' },
+		{ name: 'Kinderwillkommensfest', href: './kinderwillkommensfest' },
+		{ name: 'Eheerneuerung', href: './eheerneuerung' },
+		{ name: 'Abschiedsfeier', href: './abschiedsfeier' },
+		{ name: 'Medien & Seminare', href: './medien-seminare' },
 		{ name: 'Leistungen & Preise', href: './preise' },
+		{ name: 'Affiliates', href: './affiliates' },
 		{ name: 'Kontakt', href: './kontakt' }
 	];
 
@@ -25,16 +30,17 @@
 <div class="flex min-h-screen flex-col">
 	<header class="bg-background-header sticky top-0 z-50 shadow">
 		<nav class="content-container flex items-center justify-between px-4 py-3 md:py-1">
-			<!-- Version mit einfacher Unterstreichung -->
+			<!-- Version mit Logo und Name -->
 			<a
-				class="logo-text transition-colors hover:[&_span]:decoration-black"
+				class="logo-text flex items-center gap-3 transition-colors hover:[&_span.underline-target]:decoration-black text-xl"
 				href="./"
 				onclick={closeMenu}
 			>
-				Markus <span
-					class="relative top-[-0.2em] underline decoration-[#b773ff] decoration-2 transition-colors"
-					>redet</span
-				>
+				<img src="/images/Kranich_freigestellt.png" alt="Logo Kranich" class="h-10 md:h-12 w-auto object-contain" />
+				<span>Benjamin <span
+					class="underline-target relative top-[-0.1em] underline decoration-text-hover decoration-2 transition-colors"
+					>Crane</span
+				></span>
 			</a>
 
 			<!-- Version mit Sprechblasen-Unterstreichung -->
@@ -134,7 +140,7 @@
 			class="content-container flex flex-col items-center justify-between gap-2 px-4 py-3 text-xs md:flex-row md:text-sm"
 		>
 			<div>
-				&copy; {new Date().getFullYear()} markus-redet.de
+				&copy; {new Date().getFullYear()} benjamin-crane.de
 			</div>
 			<div class="flex flex-wrap justify-center gap-1">
 				<a
@@ -152,29 +158,6 @@
 					class="hover:text-text-hover flex items-baseline rounded px-2 py-2 transition-colors"
 					>Datenschutz</a
 				>
-				<a
-					href="https://instagram.com/markus.redet"
-					target="_blank"
-					rel="noopener"
-					class="hover:text-text-hover flex items-baseline rounded px-2 py-2 transition-colors"
-				>
-					<span class="flex items-center gap-1">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="h-4 w-4 flex-shrink-0"
-							><path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M7.5 3h9A4.5 4.5 0 0121 7.5v9a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3zM12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zM18.75 6.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-							/></svg
-						>
-						Instagram
-					</span>
-				</a>
 			</div>
 		</div>
 	</footer>

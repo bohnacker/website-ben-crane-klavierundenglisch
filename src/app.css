@@ -2,18 +2,12 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@import '@fontsource-variable/source-serif-4/wght.css';
-@import '@fontsource-variable/source-serif-4/wght-italic.css';
-@import '@fontsource-variable/manrope/wght.css';
 @import '@fontsource-variable/ibm-plex-sans';
 @import '@fontsource-variable/eb-garamond';
 @import '@fontsource-variable/eb-garamond/wght-italic.css';
 
 body {
-	/* font-family: 'EB Garamond Variable', serif; */
-	/* font-family: 'Source Serif 4 Variable', serif; */
-	/* font-family: 'Manrope Variable', sans-serif; */
-	 font-family: 'IBM Plex Sans Variable', sans-serif;
+	font-family: 'IBM Plex Sans Variable', sans-serif;
 	font-weight: var(--font-weight-base);
 	background-color: var(--color-background-base);
 	color: var(--color-text-base);
@@ -33,12 +27,12 @@ p {
 	--font-weight-heading: 500;
 	--font-weight-logo: 500;
 
-	--color-background-header: #fbfaf8;
-	--color-background-base: #f6f1eb;
-	--color-background-footer: #ffffff;
+	--color-background-header: #ffffff;
+	--color-background-base: #f8fafc;
+	--color-background-footer: #f1f5f9;
 
-	--color-text-base: #444444;
-	--color-text-hover: #A551FF; /* Hellviolett als einheitliche Hover-Farbe */
+	--color-text-base: #0f172a;
+	--color-text-hover: #CD9A5B; /* Gold als einheitliche Hover-Farbe */
 
 	/* Überschriften-Definitionen */
 	--heading-h1-size-mobile: 1.5rem; /* 28px mobile */
