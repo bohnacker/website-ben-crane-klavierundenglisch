@@ -61,7 +61,7 @@
 
 		<div>
 			<h2 class="heading-h3 mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
-			<p>Markus Bohnacker<br />
+			<p>Benjamin Crane<br />
 			[Anschrift wie oben]</p>
 		</div>
 

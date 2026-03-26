@@ -140,7 +140,7 @@
 			class="content-container flex flex-col items-center justify-between gap-2 px-4 py-3 text-xs md:flex-row md:text-sm"
 		>
 			<div>
-				&copy; {new Date().getFullYear()} benjamin-crane.de
+				&copy; {new Date().getFullYear()} Benjamin Crane
 			</div>
 			<div class="flex flex-wrap justify-center gap-1">
 				<a
