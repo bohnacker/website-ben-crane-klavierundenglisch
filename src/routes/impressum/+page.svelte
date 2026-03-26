@@ -8,10 +8,10 @@
 </script>
 
 <svelte:head>
-	<title>Impressum - Markus Bohnacker</title>
-	<meta name="description" content="Impressum von Markus Bohnacker, freier Redner für Trauungen, Taufen und Abschiedsfeiern in Stuttgart. Rechtliche Angaben gemäß TMG." />
+	<title>Impressum - Benjamin Crane</title>
+	<meta name="description" content="Impressum von Benjamin Crane, freier Redner für Trauungen, Taufen und Abschiedsfeiern in Aalen. Rechtliche Angaben gemäß TMG." />
 	<meta name="robots" content="noindex, follow" />
-	<link rel="canonical" href="https://markus-redet.de/impressum" />
+	<link rel="canonical" href="https://benjamin-crane.de/impressum" />
 </svelte:head>
 
 <section class="content-container-narrow py-16">
@@ -20,9 +20,9 @@
 	<div class="space-y-6 text-text-base">
 		<div>
 			<h2 class="heading-h3 mb-2">Angaben gemäß § 5 TMG:</h2>
-			<p>Markus Bohnacker<br />
-			Karlsbader Straße 16<br />
-			70372 Stuttgart<br />
+			<p>Benjamin Crane<br />
+			...<br />
+			73431 Aalen<br />
 			Deutschland</p>
 		</div>
 

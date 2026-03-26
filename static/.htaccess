@@ -1,11 +1,21 @@
-# Weiterleitung von www zu non-www
+# Weiterleitung von www zu non-www und Subfolder Routing
+Options -MultiViews
+
 RewriteEngine On
+RewriteBase /
 
 # WWW zu non-WWW Weiterleitung
-RewriteCond %{HTTP_HOST} ^www\.markus-redet\.de$ [NC]
-RewriteRule ^(.*)$ https://markus-redet.de/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.benjamin-crane\.de$ [NC]
+RewriteRule ^(.*)$ https://benjamin-crane.de/$1 [R=301,L]
 
 # HTTPS erzwingen (nur für die Hauptdomain)
 RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^markus-redet\.de$ [NC]
-RewriteRule ^(.*)$ https://markus-redet.de/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^benjamin-crane\.de$ [NC]
+RewriteRule ^(.*)$ https://benjamin-crane.de/$1 [R=301,L]
+
+# SvelteKit Routing Fallback (für Unterverzeichnisse & fehlerhafte Pfade)
+# Erlaubt das Laden von Unterseiten ohne die .html Endung (z.B. /kontakt ruft kontakt.html auf)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]

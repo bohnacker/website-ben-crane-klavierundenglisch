@@ -81,7 +81,7 @@
 		Für alle wichtigen Wege – mit Liebe und Vertrauen
 	</h2> -->
 
-	<div class="flex w-full flex-col-reverse items-center gap-8 md:flex-row">
+	<div class="flex w-full flex-col-reverse items-center gap-8 md:flex-row mb-12">
 		<!-- Container für Zitat oder Bild (links) -->
 		<div class="flex w-full justify-center md:w-1/2 md:pr-10">
 			<div class="py-8 border-y border-text-hover/30 w-full flex flex-col justify-center my-4 md:my-0">
@@ -134,5 +134,5 @@
 		</div>
 	</div>
 
-	<hr class="border-text-base mx-auto my-6 w-1/2 border-t opacity-50" />
+	<!-- <hr class="border-text-base mx-auto my-6 w-1/2 border-t opacity-50" /> -->
 </section>
