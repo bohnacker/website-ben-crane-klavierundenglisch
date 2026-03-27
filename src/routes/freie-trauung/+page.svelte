@@ -1,5 +1,6 @@
 <script>
 	import AudioPlayer from '$lib/components/AudioPlayer.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -47,13 +48,13 @@
 				{ title: 'Die Tortenspitze', file: 'Die%20Tortenspitze%20gut.m4a' },
 				{ title: 'Engländerin', file: 'Engländerin%2002%20gut.m4a' }
 			] as audio}
-				<AudioPlayer title={audio.title} src="/example_speeches/{audio.file}" />
+				<AudioPlayer title={audio.title} src="{base}/example_speeches/{audio.file}" />
 			{/each}
 		</div>
 	</div>
 
 	<div class="mt-16">
-		<a href="../kontakt" class="bg-gray-800 text-white px-8 py-4 rounded-none hover:bg-text-hover transition-colors uppercase text-xs tracking-widest font-medium shadow-sm">
+		<a href="{base}/kontakt" class="bg-gray-800 text-white px-8 py-4 rounded-none hover:bg-text-hover transition-colors uppercase text-xs tracking-widest font-medium shadow-sm">
 			Kontakt aufnehmen
 		</a>
 	</div>

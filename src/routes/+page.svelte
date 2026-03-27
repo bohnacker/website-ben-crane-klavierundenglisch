@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -71,7 +72,7 @@
 		</p>
 	</div>
 
-	<img src="/images/Kranich_freigestellt.png" alt="Kranich Logo" class="h-32 md:h-48 w-auto object-contain opacity-90 drop-shadow-sm" />
+	<img src="{base}/images/Kranich_freigestellt.png" alt="Kranich Logo" class="h-32 md:h-48 w-auto object-contain opacity-90 drop-shadow-sm" />
 
 	<hr class="border-text-base mx-auto my-6 w-1/2 border-t opacity-50" />
 </section>

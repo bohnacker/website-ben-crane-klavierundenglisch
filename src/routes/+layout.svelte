@@ -1,21 +1,22 @@
 <script>
 	import '../app.css';
 	import { fade } from 'svelte/transition';
+	import { base } from '$app/paths';
 
 	let { children } = $props();
 	let isMenuOpen = $state(false);
 
 	// Menüeinträge
 	const nav = [
-		{ name: 'Über mich', htmlName: 'Über<br>mich', href: './ueber-mich' },
-		{ name: 'Freie Trauung', htmlName: 'Freie<br>Trauung', href: './freie-trauung' },
-		{ name: 'Kinderwillkommensfest', htmlName: 'Kinder-<br>willkommens-<br>fest', href: './kinderwillkommensfest' },
-		{ name: 'Eheerneuerung', htmlName: 'Ehe-<br>erneuerung', href: './eheerneuerung' },
-		{ name: 'Abschiedsfeier', htmlName: 'Abschieds-<br>feier', href: './abschiedsfeier' },
-		{ name: 'Medien & Seminare', htmlName: 'Medien &<br>Seminare', href: './medien-seminare' },
-		{ name: 'Leistungen & Preise', htmlName: 'Leistungen<br>& Preise', href: './preise' },
-		{ name: 'Partner', htmlName: 'Partner', href: './affiliates' },
-		{ name: 'Kontakt', htmlName: 'Kontakt', href: './kontakt' }
+		{ name: 'Über mich', htmlName: 'Über<br>mich', href: `${base}/ueber-mich` },
+		{ name: 'Freie Trauung', htmlName: 'Freie<br>Trauung', href: `${base}/freie-trauung` },
+		{ name: 'Kinderwillkommensfest', htmlName: 'Kinder-<br>willkommens-<br>fest', href: `${base}/kinderwillkommensfest` },
+		{ name: 'Eheerneuerung', htmlName: 'Ehe-<br>erneuerung', href: `${base}/eheerneuerung` },
+		{ name: 'Abschiedsfeier', htmlName: 'Abschieds-<br>feier', href: `${base}/abschiedsfeier` },
+		{ name: 'Medien & Seminare', htmlName: 'Medien &<br>Seminare', href: `${base}/medien-seminare` },
+		{ name: 'Leistungen & Preise', htmlName: 'Leistungen<br>& Preise', href: `${base}/preise` },
+		{ name: 'Partner', htmlName: 'Partner', href: `${base}/affiliates` },
+		{ name: 'Kontakt', htmlName: 'Kontakt', href: `${base}/kontakt` }
 	];
 
 	function toggleMenu() {
@@ -35,10 +36,10 @@
 			<!-- Version mit Logo und Name -->
 			<a
 				class="logo-text flex items-center gap-3 transition-colors hover:[&_span.underline-target]:decoration-black text-xl"
-				href="./"
+				href="{base}/"
 				onclick={closeMenu}
 			>
-				<img src="/images/Kranich_freigestellt.png" alt="Logo Kranich" class="h-10 md:h-12 w-auto object-contain" />
+				<img src="{base}/images/Kranich_freigestellt.png" alt="Logo Kranich" class="h-10 md:h-12 w-auto object-contain" />
 				<span class="text-text-hover font-medium">Benjamin Crane</span>
 			</a>
 
@@ -144,17 +145,17 @@
 			</div>
 			<div class="flex flex-wrap justify-center gap-1">
 				<a
-					href="./kontakt"
+					href="{base}/kontakt"
 					class="hover:text-text-hover flex items-baseline rounded px-2 py-2 transition-colors"
 					>Kontakt</a
 				>
 				<a
-					href="./impressum"
+					href="{base}/impressum"
 					class="hover:text-text-hover flex items-baseline rounded px-2 py-2 transition-colors"
 					>Impressum</a
 				>
 				<a
-					href="./datenschutz"
+					href="{base}/datenschutz"
 					class="hover:text-text-hover flex items-baseline rounded px-2 py-2 transition-colors"
 					>Datenschutz</a
 				>
