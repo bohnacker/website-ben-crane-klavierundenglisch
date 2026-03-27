@@ -21,7 +21,7 @@
 		<div>
 			<h2 class="heading-h3 mb-2">Angaben gemäß § 5 TMG:</h2>
 			<p>Benjamin Crane<br />
-			...<br />
+			Saarstraße 40<br />
 			73431 Aalen<br />
 			Deutschland</p>
 		</div>
@@ -30,8 +30,8 @@
 			<h2 class="heading-h3 mb-2">Kontakt:</h2>
 			<p>E-Mail: 
 			<!-- svelte-ignore a11y-invalid-attribute -->
-			<a href="#" onclick={handleEmailClick} class="hover:text-text-hover hover:underline cursor-pointer">info[at]markus-redet[dot]de</a><br />
-			Telefon: +49 151 70226615</p>
+			<a href="#" onclick={handleEmailClick} class="hover:text-text-hover hover:underline cursor-pointer">bcbooks[at]gmx[dot]de</a><br />
+			Telefon: +49 162 1926412</p>
 		</div>
 
 		<div>
