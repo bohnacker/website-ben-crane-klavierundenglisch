@@ -1,9 +1,5 @@
-<script> 		
-	function handleEmailClick(event) {
-		event.preventDefault();
-		const email = atob('ZWQudGVkZXItc3VrcmFtQG9mbmk=').split('').reverse().join('');
-		window.location.href = `mailto:${email}`;
-	}
+<script> 	
+	import { handleEmailClick } from '$lib/helpers';	
 
 </script>
 

@@ -78,10 +78,13 @@ Kontaktformular - bitte einfügen
 Hier kommen ein paar Logos und kurze Texte zu befreundeten Unternehmen. Die Logos befinden sich in "static/images/affiliates"
 
 Weingut Eser
+eser-wein.de
 
 Juwelier Schön
+JUWELIERSCHOEN.DE
 
 Käse Schierle
+kaese-schierle.de
 
 ---
 

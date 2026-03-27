@@ -37,7 +37,7 @@
 		<!-- Goldener Akzent-Streifen ganz oben -->
 		<div class="h-2 w-full bg-text-hover"></div>
 		<header class="bg-background-header sticky top-0 z-50 shadow">
-			<nav class="content-container flex items-center justify-between px-4 py-3 md:py-1">
+			<nav class="content-container flex items-start justify-between px-4 py-3 md:pt-4 md:pb-1">
 				<!-- Version mit Logo und Name -->
 				<a
 					class="logo-text flex items-center gap-3 transition-colors hover:[&_span.underline-target]:decoration-black text-xl"
@@ -49,7 +49,7 @@
 				</a>
 
 				<!-- Desktop Navigation -->
-				<ul class="hidden space-x-0.5 md:space-x-1 lg:flex items-center">
+				<ul class="hidden space-x-0.5 md:space-x-1 lg:flex items-start">
 					{#each nav as item}
 						<li>
 							<a

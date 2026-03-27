@@ -1,12 +1,5 @@
 <script>
-	let showSuccess = $state(false);
-	
-	function handleSubmit(e) {
-		e.preventDefault();
-		// Fake form submission since no backend is connected usually for static templates
-		showSuccess = true;
-		setTimeout(() => { showSuccess = false; e.target.reset(); }, 5000);
-	}
+	import { handleEmailClick } from '$lib/helpers';
 </script>
 
 <svelte:head>
@@ -17,58 +10,31 @@
 <section class="content-container-narrow my-12 flex flex-col items-center gap-6">
 	<h1 class="heading-h1 md:text-4xl text-center">Kontakt</h1>
 
-	<div class="text-text-base text-center mb-6">
-		<p>
-			Ich freue mich auf Eure Nachricht!<br>
-			Schreibt mir einfach und unverbindlich eine E-Mail über das Formular oder direkt.
+	<div class="text-text-base text-center mb-6 space-y-6">
+		<p class="text-lg md:text-xl font-family-heading italic">
+			Ich freue mich auf Eure Nachricht!
+		</p>
+		<p class="text-sm md:text-base leading-relaxed tracking-wide">
+			Ob Ihr eine Freie Trauung plant, ein Kinderwillkommensfest feiern wollt oder Begleitung für eine Abschiedsfeier sucht – schreibt mir einfach und unverbindlich eine E-Mail. 
+		</p>
+		<p class="text-sm md:text-base leading-relaxed tracking-wide">
+			Ich nehme mir gerne Zeit für Eure Geschichte und Eure Wünsche.
 		</p>
 	</div>
 
-	<div class="w-full bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100 mb-8">
-		<form class="space-y-6" onsubmit={handleSubmit}>
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-				<div class="space-y-2">
-					<label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-					<input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-amber-500 focus:border-amber-500" />
-				</div>
-				<div class="space-y-2">
-					<label for="email" class="block text-sm font-medium text-gray-700">E-Mail</label>
-					<input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-amber-500 focus:border-amber-500" />
-				</div>
-			</div>
-
-			<div class="space-y-2">
-				<label for="subject" class="block text-sm font-medium text-gray-700">Betreff (Anlass & Datum)</label>
-				<input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-amber-500 focus:border-amber-500" />
-			</div>
-
-			<div class="space-y-2">
-				<label for="message" class="block text-sm font-medium text-gray-700">Nachricht</label>
-				<textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-amber-500 focus:border-amber-500"></textarea>
-			</div>
-
-			<div class="pt-2">
-				<button type="submit" class="w-full md:w-auto px-8 py-3 bg-gray-800 text-white font-medium rounded-lg hover:bg-amber-600 transition-colors">
-					Nachricht absenden
-				</button>
-			</div>
-			
-			{#if showSuccess}
-				<div class="p-4 bg-green-50 text-green-700 rounded-md text-sm">
-					Vielen Dank! Die Nachricht wurde versendet. Ich melde mich in Kürze.
-				</div>
-			{/if}
-		</form>
+	<div class="mt-8 text-center">
+		<a
+			href="mailto:bcbooks@gmx.de"
+			onclick={handleEmailClick}
+			class="bg-gray-800 text-white px-10 py-4 rounded-none hover:bg-text-hover transition-colors uppercase text-xs tracking-widest font-medium shadow-sm"
+		>
+			E-Mail schreiben
+		</a>
 	</div>
 
-	<div class="w-full border-t border-gray-200 pt-8 mt-4">
-		<h2 class="font-family-heading text-2xl font-bold mb-4 text-center">Direkter Kontakt</h2>
-		<div class="flex flex-col items-center gap-2 text-center">
-			<p><strong>Benjamin Crane</strong></p>
-			<p>Aalen, Baden-Württemberg</p>
-			<p>E-Mail: <a href="mailto:kontakt@benjamin-crane.de" class="text-amber-700 hover:underline">kontakt@benjamin-crane.de</a></p>
-			<!-- Adjust phone number if available -->
-			<!-- <p>Telefon: +49 (0) 123 456789</p> -->
-		</div>
-	</div>
+	<!-- <div class="mt-24 pt-12 border-t border-text-hover/20 w-full text-center text-sm text-text-base space-y-2 opacity-80">
+		<p class="font-bold tracking-normal">Benjamin Crane</p>
+		<p>Saarstraße 40 · 73431 Aalen</p>
+		<p>Telefon: +49 162 1926412</p>
+	</div> -->
 </section>

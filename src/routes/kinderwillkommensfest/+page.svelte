@@ -1,4 +1,5 @@
 <script>
+	import { handleEmailClick } from '$lib/helpers';
 </script>
 
 <svelte:head>
@@ -28,8 +29,12 @@
 		</p>
 	</div>
 
-	<div class="mt-8">
-		<a href="../kontakt" class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-amber-600 transition-colors">
+	<div class="mt-16 w-full border-t border-text-hover/20 pt-16 flex justify-center">
+			<a
+			href="mailto:bcbooks@gmx.de"
+			onclick={handleEmailClick}
+			class="bg-gray-800 text-white px-10 py-4 rounded-none hover:bg-text-hover transition-colors uppercase text-xs tracking-widest font-medium shadow-sm"
+		>
 			Kontakt aufnehmen
 		</a>
 	</div>

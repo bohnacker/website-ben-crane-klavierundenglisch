@@ -1,5 +1,6 @@
 <script>
 	import AudioPlayer from '$lib/components/AudioPlayer.svelte';
+	import { handleEmailClick } from '$lib/helpers';
 	import { base } from '$app/paths';
 </script>
 
@@ -40,9 +41,9 @@
 	</div>
 
 	<!-- Hörbeispiele -->
-	<div class="mt-20 w-full border-t border-text-hover/20 pt-16">
+	<div class="mt-20 w-full border-t border-text-hover/20 pt-8">
 		<h2 class="heading-h2 mb-10 text-center">Hörproben & Einblicke</h2>
-		<div class="grid grid-cols-1 gap-6 max-w-xl mx-auto w-full">
+		<div class="grid grid-cols-1 gap-6 max-w-xl mx-auto w-full mt-8">
 			{#each [
 				{ title: 'Eheversprechen', file: 'Eheversprechen%2002.m4a' },
 				{ title: 'Die Tortenspitze', file: 'Die%20Tortenspitze%20gut.m4a' },
@@ -53,8 +54,12 @@
 		</div>
 	</div>
 
-	<div class="mt-16">
-		<a href="{base}/kontakt" class="bg-gray-800 text-white px-8 py-4 rounded-none hover:bg-text-hover transition-colors uppercase text-xs tracking-widest font-medium shadow-sm">
+	<div class="mt-16 w-full border-t border-text-hover/20 pt-16 flex justify-center">
+			<a
+			href="mailto:bcbooks@gmx.de"
+			onclick={handleEmailClick}
+			class="bg-gray-800 text-white px-10 py-4 rounded-none hover:bg-text-hover transition-colors uppercase text-xs tracking-widest font-medium shadow-sm"
+		>
 			Kontakt aufnehmen
 		</a>
 	</div>
