@@ -1,4 +1,5 @@
 <script>
+	import AudioPlayer from '$lib/components/AudioPlayer.svelte';
 </script>
 
 <svelte:head>
@@ -46,13 +47,7 @@
 				{ title: 'Die Tortenspitze', file: 'Die%20Tortenspitze%20gut.m4a' },
 				{ title: 'Engländerin', file: 'Engländerin%2002%20gut.m4a' }
 			] as audio}
-				<div class="p-4 bg-white/50 border border-gray-100 rounded-none shadow-sm flex flex-col gap-3">
-					<p class="text-xs uppercase tracking-widest font-medium text-text-hover">{audio.title}</p>
-					<audio controls class="w-full h-10">
-						<source src="/example_speeches/{audio.file}" type="audio/mp4" />
-						Ihr Browser unterstützt das Audio-Element nicht.
-					</audio>
-				</div>
+				<AudioPlayer title={audio.title} src="/example_speeches/{audio.file}" />
 			{/each}
 		</div>
 	</div>
