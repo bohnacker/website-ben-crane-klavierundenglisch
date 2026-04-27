@@ -49,7 +49,7 @@
 					<h2 class="font-family-heading text-3xl font-normal mb-4 text-gray-800 transition-colors group-hover:text-text-hover">Weingut Eser</h2>
 				</a>
 				<p class="text-sm leading-relaxed text-gray-700">
-					Spezialitäten und Weine für Eure Feierlichkeiten. <span class="block mt-2 opacity-60 italic">Mehr Informationen folgen in Kürze.</span>
+					Spezialitäten und Weine für Eure Feierlichkeiten. 
 				</p>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 					<h2 class="font-family-heading text-3xl font-normal mb-4 text-gray-800 transition-colors group-hover:text-text-hover">Käse Schierle</h2>
 				</a>
 				<p class="text-sm leading-relaxed text-gray-700">
-					Feinste Käsekreationen für besondere Anlässe. <span class="block mt-2 opacity-60 italic">Mehr Informationen bald verfügbar.</span>
+					Feinste Käsekreationen für besondere Anlässe. 
 				</p>
 			</div>
 		</div>
