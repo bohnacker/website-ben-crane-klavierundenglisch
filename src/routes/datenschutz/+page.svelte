@@ -1,9 +1,5 @@
 <script>
-	function handleEmailClick(event) {
-		event.preventDefault();
-		const email = atob('ZWQudGVkZXItc3VrcmFtQG9mbmk=').split('').reverse().join('');
-		window.location.href = `mailto:${email}`;
-	}
+	import { handleEmailClick } from '$lib/helpers';
 
 	function getCurrentMonthYear() {
 		const months = [
@@ -52,14 +48,15 @@
 				Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 			</p>
 			<p class="mb-4 text-sm">
-				Markus Bohnacker<br />
-				Karlsbader Straße 16, 70372 Stuttgart, Deutschland<br />
+				Benjamin Crane<br />
+				Saarstraße 40, 73431 Aalen, Deutschland<br />
 				<!-- svelte-ignore a11y-invalid-attribute -->
 				E-Mail:
 				<a href="#" onclick={handleEmailClick} class="hover:text-text-hover cursor-pointer hover:underline"
-					>info[at]markus-redet[dot]de</a
+					>bcbooks[at]gmx[dot]de</a
 				>
 			</p>
+
 		</div>
 
 		<div>
