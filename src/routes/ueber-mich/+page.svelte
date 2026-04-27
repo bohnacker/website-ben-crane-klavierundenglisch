@@ -28,7 +28,7 @@
 		"addressRegion": "Baden-Württemberg",
 		"addressCountry": "DE"
 	},
-	"email": "kontakt@benjamin-crane.de",
+	"email": "bcbooks@gmx.de",
 	"jobTitle": "Freier Redner"
 }
 </script>`}

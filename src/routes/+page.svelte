@@ -50,7 +50,7 @@
 			"Trauerrede"
 		],
 		"priceRange": "€€",
-		"email": "kontakt@benjamin-crane.de"
+		"email": "bcbooks@gmx.de"
 	}
 	</script>`}
 </svelte:head>

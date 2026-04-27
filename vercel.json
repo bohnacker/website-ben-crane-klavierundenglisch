@@ -1,8 +1,14 @@
 {
 	"redirects": [
 		{
-			"source": "https://www.markus-redet.de/(.*)",
-			"destination": "https://markus-redet.de/$1",
+			"source": "/(.*)",
+			"has": [
+				{
+					"type": "host",
+					"value": "www.trauteuchzutrauen.de"
+				}
+			],
+			"destination": "https://trauteuchzutrauen.de/$1",
 			"statusCode": 301
 		}
 	]

@@ -5,13 +5,13 @@ RewriteEngine On
 RewriteBase /
 
 # WWW zu non-WWW Weiterleitung
-RewriteCond %{HTTP_HOST} ^www\.benjamin-crane\.de$ [NC]
-RewriteRule ^(.*)$ https://benjamin-crane.de/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.trauteuchzutrauen\.de$ [NC]
+RewriteRule ^(.*)$ https://trauteuchzutrauen.de/$1 [R=301,L]
 
 # HTTPS erzwingen (nur für die Hauptdomain)
 RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^benjamin-crane\.de$ [NC]
-RewriteRule ^(.*)$ https://benjamin-crane.de/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^trauteuchzutrauen\.de$ [NC]
+RewriteRule ^(.*)$ https://trauteuchzutrauen.de/$1 [R=301,L]
 
 # SvelteKit Routing Fallback (für Unterverzeichnisse & fehlerhafte Pfade)
 # Erlaubt das Laden von Unterseiten ohne die .html Endung (z.B. /kontakt ruft kontakt.html auf)

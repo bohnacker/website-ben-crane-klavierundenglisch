@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import { join } from 'path';
 
-const BASE_URL = 'https://markus-redet.de';
+const BASE_URL = 'https://trauteuchzutrauen.de';
 
 const pages = [
   { url: '/', file: 'src/routes/+page.svelte', priority: '1.0', changefreq: 'monthly' },
