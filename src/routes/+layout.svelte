@@ -8,8 +8,9 @@
 	let isMenuOpen = $state(false);
 
 	// Hilfsvariable, um zu prüfen, ob wir auf der Landing-Page sind
-	let isLandingPage = $derived(page.url.pathname === `${base}` || page.url.pathname === `${base}/`);
-
+	// let isLandingPage = $derived(page.url.pathname === `${base}` || page.url.pathname === `${base}/`);
+	let isLandingPage = false; // --- IGNORE --- (für die Vorschau, damit Header/Footer sichtbar sind)
+	
 	// Menüeinträge
 	const nav = [
 		{ name: 'Über mich', htmlName: 'Über<br>mich', href: `${base}/ueber-mich` },
@@ -37,7 +38,7 @@
 		<!-- Goldener Akzent-Streifen ganz oben -->
 		<div class="h-2 w-full bg-text-hover"></div>
 		<header class="bg-background-header sticky top-0 z-50 shadow">
-			<nav class="content-container flex items-start justify-between px-4 py-3 md:pt-4 md:pb-1">
+			<nav class="content-container flex lg:items-start items-center justify-between px-4 py-3 md:pt-4 md:pb-1">
 				<!-- Version mit Logo und Name -->
 				<a
 					class="logo-text flex items-center gap-3 transition-colors hover:[&_span.underline-target]:decoration-black text-xl"
@@ -45,7 +46,7 @@
 					onclick={closeMenu}
 				>
 					<img src="{base}/images/Kranich_freigestellt.png" alt="Logo Kranich" class="h-10 md:h-12 w-auto object-contain" />
-					<span class="text-text-hover font-medium">Benjamin Crane</span>
+					<span class="text-text-hover font-medium" style="transform: translateY(-3px);">Benjamin Crane</span>
 				</a>
 
 				<!-- Desktop Navigation -->

@@ -18,10 +18,10 @@
 </script>
 
 <svelte:head>
-	<title>Datenschutzerklärung - Markus Bohnacker</title>
-	<meta name="description" content="Datenschutzerklärung von Markus Bohnacker (markus-redet.de). Informationen zum Umgang mit personenbezogenen Daten gemäß DSGVO." />
+	<title>Datenschutzerklärung - Benjamin Crane</title>
+	<meta name="description" content="Datenschutzerklärung von Benjamin Crane (trauteuchzutrauen.de). Informationen zum Umgang mit personenbezogenen Daten gemäß DSGVO." />
 	<meta name="robots" content="noindex, follow" />
-	<link rel="canonical" href="https://markus-redet.de/datenschutz" />
+	<link rel="canonical" href="https://trauteuchzutrauen.de/datenschutz" />
 </svelte:head>
 
 <section class="content-container-narrow py-16">

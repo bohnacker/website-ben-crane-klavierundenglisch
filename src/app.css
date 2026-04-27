@@ -6,6 +6,22 @@
 @import '@fontsource-variable/eb-garamond';
 @import '@fontsource-variable/eb-garamond/wght-italic.css';
 
+/* Flaemische Kanzleischrift (lokal in static/fonts/) */
+/*
+	Hinweis: WOFF/WOFF2 sind effizienter — Konvertierung empfohlen.
+	Beispiel-Konvertierung: `fonttools` oder `sfnt2woff-zopfli` nutzen.
+*/
+@font-face {
+	font-family: 'Flaemische Kanzleischrift';
+	src: url('/fonts/Flaemische%20Kanzleischrift.woff2') format('woff2'),
+			 url('/fonts/Flaemische%20Kanzleischrift.woff') format('woff'),
+			 local('Flaemische Kanzleischrift'),
+			 url('/fonts/Flaemische%20Kanzleischrift.ttf') format('truetype');
+	font-weight: 400 700;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
 	font-family: 'IBM Plex Sans Variable', sans-serif;
 	font-weight: var(--font-weight-base);
@@ -34,7 +50,7 @@ hr.border-t {
 @theme {
 	--font-family-base: 'IBM Plex Sans Variable', sans-serif;
 	--font-family-heading: 'EB Garamond Variable', serif;
-	--font-family-logo: 'EB Garamond Variable', serif;
+	--font-family-logo: 'Flaemische Kanzleischrift', 'EB Garamond Variable', serif;
 
 	--font-weight-base: 300;
 	--font-weight-heading: 500;
@@ -45,7 +61,7 @@ hr.border-t {
 	--color-background-footer: #ffffff;
 
 	--color-text-base: #0f172a;
-	--color-text-hover: #CD9A5B; /* Gold als einheitliche Hover-Farbe */
+	--color-text-hover: rgb(212, 146, 23); /* Gold als einheitliche Hover-Farbe */
 
 	/* Überschriften-Definitionen */
 	--heading-h1-size-mobile: 1.5rem; /* 28px mobile */
@@ -185,7 +201,7 @@ hr.border-t {
 .logo-text {
 	font-family: var(--font-family-logo);
 	font-weight: var(--font-weight-logo);
-	font-size: 1.125rem; /* 18px mobile */
+	font-size: 1.7rem; /* 24px mobile — erhöht für bessere Lesbarkeit */
 	line-height: 1.2;
 	color: var(--color-text-base);
 	font-style: italic;
@@ -194,7 +210,7 @@ hr.border-t {
 
 @media (min-width: 768px) {
 	.logo-text {
-		font-size: 1.25rem; /* 20px desktop */
+		font-size: 1.7rem; /* 24px desktop — etwas größer für verzierte Schrift */
 	}
 }
 

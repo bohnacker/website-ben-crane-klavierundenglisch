@@ -7,7 +7,7 @@
 	<title>Impressum - Benjamin Crane</title>
 	<meta name="description" content="Impressum von Benjamin Crane, freier Redner für Trauungen, Taufen und Abschiedsfeiern in Aalen. Rechtliche Angaben gemäß TMG." />
 	<meta name="robots" content="noindex, follow" />
-	<link rel="canonical" href="https://benjamin-crane.de/impressum" />
+	<link rel="canonical" href="https://trauteuchzutrauen.de/impressum" />
 </svelte:head>
 
 <section class="content-container-narrow py-16">

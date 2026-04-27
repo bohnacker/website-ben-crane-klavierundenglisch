@@ -1,4 +1,5 @@
 <script>
+	import { handleEmailClick } from '$lib/helpers';
 </script>
 
 <svelte:head>
@@ -31,8 +32,15 @@
 					„Beloved, ich liebe Dich - Für Paare, die es heute sagen und dies bis der Tod sie scheidet, auch noch sagen wollen“ <br/><span class="text-base font-sans not-italic text-gray-500 uppercase tracking-widest mt-4 block">— Ein Eheseminar bestehend aus mehreren Einheiten.</span>
 				</p>
 			</div>
-			<div class="mt-2 text-center">
-				<a href="../kontakt" class="inline-block bg-text-hover text-white px-8 py-3 tracking-wider text-sm uppercase rounded-sm hover:bg-gray-800 transition-colors shadow-sm">Interesse? Hier kontaktieren</a>
+
+			<div class="w-full pt-10 flex justify-center">
+				<a
+					href="mailto:bcbooks@gmx.de"
+					onclick={handleEmailClick}
+					class="bg-gray-800 text-white px-10 py-4 rounded-none hover:bg-text-hover transition-colors uppercase text-xs tracking-widest font-medium shadow-sm"
+				>
+					Interesse? Hier kontaktieren
+				</a>
 			</div>
 		</div>
 

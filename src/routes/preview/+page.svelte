@@ -8,9 +8,9 @@
 	<meta name="keywords" content="Freie Trauung Aalen, Trauredner Aalen, Trauerredner, Kinderwillkommensfest, Eheerneuerung, Benjamin Crane, freier Redner, Hochzeit Aalen" />
 	<meta property="og:title" content="Benjamin Crane - Trauredner & Trauerredner aus Aalen" />
 	<meta property="og:description" content="Persönliche freie Trauungen, Kinderwillkommensfeste und Abschiedsfeiern. Mit englischem Humor und Leidenschaft." />
-	<meta property="og:url" content="https://benjamin-crane.de" />
-	<meta property="og:image" content="https://benjamin-crane.de/images/Ben_bearbeitet_extended.JPG" />
-	<link rel="canonical" href="https://benjamin-crane.de" />
+	<meta property="og:url" content="https://trauteuchzutrauen.de" />
+	<meta property="og:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
+	<link rel="canonical" href="https://trauteuchzutrauen.de" />
 	
 	<!-- Strukturierte Daten für Rich Snippets -->
 	{@html `<script type="application/ld+json">
@@ -21,9 +21,9 @@
 		"alternateName": ["Benjamin Crane", "benjamin-crane.de"],
 		"jobTitle": "Freier Redner",
 		"description": "Freier Redner für Trauungen, Kinderwillkommensfeste, Eheerneuerungen und Abschiedsfeiern in Aalen und Umgebung.",
-		"url": "https://benjamin-crane.de",
+		"url": "https://trauteuchzutrauen.de",
 		"image": [
-			"https://benjamin-crane.de/images/Ben_bearbeitet_extended.JPG"
+			"https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG"
 		],
 		"address": {
 			"@type": "PostalAddress",

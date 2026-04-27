@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section class="content-container-centered my-6 flex flex-col items-center gap-1">
-	<h1 class="heading-h1 mt-6 md:text-4xl">Trau(e)rredner, Seelsorger, Autor & Musiker</h1>
+	<h1 class="heading-h1 mt-6 md:text-4xl">Trau(er)redner, Seelsorger, Autor & Musiker</h1>
 </section>
 
 <section class="content-container flex flex-col items-center gap-x-8">
