@@ -5,6 +5,14 @@
 <svelte:head>
 	<title>Abschiedsfeier - Benjamin Crane</title>
 	<meta name="description" content="Würdevolle und schöne Abschiedsfeiern mit Benjamin Crane." />
+
+	<link rel="canonical" href="https://trauteuchzutrauen.de/abschiedsfeier" />
+	<meta property="og:title" content="Abschiedsfeier - Benjamin Crane" />
+	<meta property="og:description" content="Würdevolle und schöne Abschiedsfeiern mit Benjamin Crane." />
+	<meta property="og:url" content="https://trauteuchzutrauen.de/abschiedsfeier" />
+	<meta property="og:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
 </svelte:head>
 
 <section class="content-container-narrow my-12 flex flex-col items-center gap-6">

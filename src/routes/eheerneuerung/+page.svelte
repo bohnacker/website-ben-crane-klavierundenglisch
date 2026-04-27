@@ -5,6 +5,14 @@
 <svelte:head>
 	<title>Eheerneuerung - Benjamin Crane</title>
 	<meta name="description" content="Eheerneuerung mit Benjamin Crane - Euren Meilenstein gebührend feiern." />
+
+	<link rel="canonical" href="https://trauteuchzutrauen.de/eheerneuerung" />
+	<meta property="og:title" content="Eheerneuerung - Benjamin Crane" />
+	<meta property="og:description" content="Eheerneuerung mit Benjamin Crane - Euren Meilenstein gebührend feiern." />
+	<meta property="og:url" content="https://trauteuchzutrauen.de/eheerneuerung" />
+	<meta property="og:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
 </svelte:head>
 
 <section class="content-container-narrow my-12 flex flex-col items-center gap-6">

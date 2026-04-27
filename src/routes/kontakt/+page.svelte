@@ -5,6 +5,14 @@
 <svelte:head>
 	<title>Kontakt - Benjamin Crane</title>
 	<meta name="description" content="Nimm Kontakt auf mit Benjamin Crane für Freie Trauungen, Taufen und Seminare." />
+
+	<link rel="canonical" href="https://trauteuchzutrauen.de/kontakt" />
+	<meta property="og:title" content="Kontakt - Benjamin Crane" />
+	<meta property="og:description" content="Nimm Kontakt auf mit Benjamin Crane für Freie Trauungen, Taufen und Seminare." />
+	<meta property="og:url" content="https://trauteuchzutrauen.de/kontakt" />
+	<meta property="og:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
 </svelte:head>
 
 <section class="content-container-narrow my-12 flex flex-col items-center gap-6">

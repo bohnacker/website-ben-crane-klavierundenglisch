@@ -4,6 +4,34 @@
 <svelte:head>
 	<title>Über mich - Benjamin Crane</title>
 	<meta name="description" content="Erfahre mehr über Benjamin Crane - Deinen freien Redner, Autor und Musiker aus Aalen." />
+
+	<!-- SEO / Social -->
+	<link rel="canonical" href="https://trauteuchzutrauen.de/ueber-mich" />
+	<meta property="og:title" content="Über mich - Benjamin Crane" />
+	<meta property="og:description" content="Erfahre mehr über Benjamin Crane - Deinen freien Redner, Autor und Musiker aus Aalen." />
+	<meta property="og:url" content="https://trauteuchzutrauen.de/ueber-mich" />
+	<meta property="og:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
+
+	<!-- Structured data -->
+	{@html `<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": ["Person","LocalBusiness"],
+	"name": "Benjamin Crane",
+	"url": "https://trauteuchzutrauen.de/ueber-mich",
+	"image": "https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Aalen",
+		"addressRegion": "Baden-Württemberg",
+		"addressCountry": "DE"
+	},
+	"email": "kontakt@benjamin-crane.de",
+	"jobTitle": "Freier Redner"
+}
+</script>`}
 </svelte:head>
 
 <section class="content-container-centered my-6 flex flex-col items-center gap-1">

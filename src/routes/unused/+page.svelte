@@ -5,6 +5,10 @@
 <svelte:head>
 	<title>Benjamin Crane - Demnächst mehr</title>
 	<meta name="description" content="Hier entsteht die neue Website von Benjamin Crane. Demnächst erfahrt Ihr hier mehr." />
+
+	<!-- Placeholder page: do not index -->
+	<meta name="robots" content="noindex, follow" />
+	<link rel="canonical" href="https://trauteuchzutrauen.de/" />
 </svelte:head>
 
 <div class="min-h-screen flex flex-col items-center justify-center p-6 text-center bg-background-base">

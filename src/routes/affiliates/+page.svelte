@@ -4,6 +4,14 @@
 <svelte:head>
 	<title>Affiliates - Benjamin Crane</title>
 	<meta name="description" content="Befreundete Unternehmen und Partner von Benjamin Crane." />
+
+	<link rel="canonical" href="https://trauteuchzutrauen.de/affiliates" />
+	<meta property="og:title" content="Affiliates - Benjamin Crane" />
+	<meta property="og:description" content="Befreundete Unternehmen und Partner von Benjamin Crane." />
+	<meta property="og:url" content="https://trauteuchzutrauen.de/affiliates" />
+	<meta property="og:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://trauteuchzutrauen.de/images/Ben_bearbeitet_extended.JPG" />
 </svelte:head>
 
 <section class="content-container-narrow my-12 flex flex-col items-center gap-6">
