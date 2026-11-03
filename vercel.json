@@ -1,15 +1,4 @@
 {
-	"redirects": [
-		{
-			"source": "/(.*)",
-			"has": [
-				{
-					"type": "host",
-					"value": "www.trauteuchzutrauen.de"
-				}
-			],
-			"destination": "https://trauteuchzutrauen.de/$1",
-			"statusCode": 301
-		}
-	]
+	"cleanUrls": true,
+	"trailingSlash": false
 }

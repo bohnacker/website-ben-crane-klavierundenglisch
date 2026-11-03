@@ -1,25 +1,5 @@
 User-agent: *
 Allow: /
 
-# Hauptseiten
-Allow: /
-Allow: /ueber-mich
-Allow: /kinderwillkommensfest
-Allow: /preview
-Allow: /affiliates
-Allow: /abschiedsfeier
-Allow: /freie-trauung
-Allow: /preise
-Allow: /eheerneuerung
-Allow: /kontakt
-Allow: /medien-seminare
-
-# Rechtliche Seiten (weniger relevant für SEO)
-Allow: /impressum
-Allow: /datenschutz
-
 # Sitemap
-Sitemap: https://trauteuchzutrauen.de/sitemap.xml
-
-# Crawler-freundliche Einstellungen
-Crawl-delay: 1
+Sitemap: https://www.klavierundenglisch.com/sitemap.xml

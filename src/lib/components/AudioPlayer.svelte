@@ -36,23 +36,37 @@
 	}
 </script>
 
-<div class="flex flex-col gap-2 p-4 bg-white border border-gray-100 shadow-sm transition-all hover:shadow-md">
+<div
+	class="flex flex-col gap-2 border border-gray-100 bg-white p-4 shadow-sm transition-all hover:shadow-md"
+>
 	{#if title}
-		<p class="text-[10px] uppercase tracking-[0.2em] font-medium text-text-hover mb-1">{title}</p>
+		<p class="mb-1 text-[10px] font-medium tracking-[0.2em] text-text-hover uppercase">{title}</p>
 	{/if}
-	
+
 	<div class="flex items-center gap-4">
-		<button 
+		<button
 			onclick={togglePlay}
 			class="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 text-white transition-colors hover:bg-text-hover focus:outline-none"
 			aria-label={paused ? 'Abspielen' : 'Pause'}
 		>
 			{#if paused}
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					height="20"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+				>
 					<path d="M8 5v14l11-7z" />
 				</svg>
 			{:else}
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					height="20"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+				>
 					<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
 				</svg>
 			{/if}
@@ -61,39 +75,38 @@
 		<div class="flex flex-1 flex-col gap-1">
 			<div class="relative h-1.5 w-full bg-gray-200">
 				<!-- Buffered bar (optional, harder to do with simple input) -->
-				<div 
-					class="absolute h-full bg-text-hover/30" 
-					style="width: 0%"
-				></div>
+				<div class="absolute h-full bg-text-hover/30" style="width: 0%"></div>
 				<!-- Progress bar -->
-				<div 
-					class="absolute h-full bg-text-hover transition-all duration-100" 
+				<div
+					class="absolute h-full bg-text-hover transition-all duration-100"
 					style="width: {(currentTime / duration) * 100 || 0}%"
 				></div>
 				<!-- Invisible range input for seeking -->
-				<input 
-					type="range" 
-					min="0" 
-					max="100" 
-					value="{(currentTime / duration) * 100 || 0}" 
+				<input
+					type="range"
+					min="0"
+					max="100"
+					value={(currentTime / duration) * 100 || 0}
 					oninput={handleSeek}
 					class="absolute inset-0 h-full w-full cursor-pointer opacity-0"
 				/>
 			</div>
-			
-			<div class="flex justify-between text-[10px] font-mono text-gray-500 tabular-nums lowercase tracking-wider">
+
+			<div
+				class="flex justify-between font-mono text-[10px] tracking-wider text-gray-500 lowercase tabular-nums"
+			>
 				<span>{formatTime(currentTime)}</span>
 				<span>{formatTime(duration)}</span>
 			</div>
 		</div>
 	</div>
 
-	<audio 
-		bind:this={audio} 
-		{src} 
+	<audio
+		bind:this={audio}
+		{src}
 		ontimeupdate={updateProgress}
 		onloadedmetadata={handleMetadata}
-		onended={() => paused = true}
+		onended={() => (paused = true)}
 		class="hidden"
 	></audio>
 </div>
