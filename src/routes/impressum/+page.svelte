@@ -1,6 +1,5 @@
 <script>
 	import { base } from '$app/paths';
-	import { handleEmailClick } from '$lib/helpers';
 </script>
 
 <svelte:head>
@@ -50,10 +49,8 @@
 						>+49 162 1926 412</a
 					><br />
 					E-Mail:
-					<!-- svelte-ignore a11y_invalid_attribute -->
 					<a
-						href="#"
-						onclick={handleEmailClick}
+						href="mailto:bcbooks@gmx.de"
 						class="cursor-pointer font-medium text-[#1b365d] hover:text-[#a82333] hover:underline"
 					>
 						bcbooks[at]gmx[dot]de

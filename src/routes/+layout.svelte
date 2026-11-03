@@ -3,7 +3,6 @@
 	import { fade } from 'svelte/transition';
 	import { base } from '$app/paths';
 	import { page } from '$app/state';
-	import { handleEmailClick } from '$lib/helpers';
 
 	let { children } = $props();
 	let isMenuOpen = $state(false);
@@ -205,10 +204,8 @@
 						</p>
 						<p>
 							<span class="block text-xs text-slate-400">E-Mail:</span>
-							<!-- svelte-ignore a11y_invalid_attribute -->
 							<a
-								href="#"
-								onclick={handleEmailClick}
+								href="mailto:bcbooks@gmx.de"
 								class="font-medium text-white transition-colors hover:text-[#f87171]"
 							>
 								bcbooks[at]gmx[dot]de

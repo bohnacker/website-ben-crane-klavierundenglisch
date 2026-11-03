@@ -1,6 +1,5 @@
 <script>
 	import { base } from '$app/paths';
-	import { handleEmailClick } from '$lib/helpers';
 </script>
 
 <svelte:head>
@@ -568,10 +567,8 @@
 							<span class="block text-xs font-semibold tracking-wider text-slate-500 uppercase"
 								>E-Mail</span
 							>
-							<!-- svelte-ignore a11y_invalid_attribute -->
 							<a
-								href="#"
-								onclick={handleEmailClick}
+								href="mailto:bcbooks@gmx.de"
 								class="mt-1 block truncate text-base font-semibold text-[#0f223f] transition-colors hover:text-[#a82333]"
 							>
 								bcbooks[at]gmx[dot]de
