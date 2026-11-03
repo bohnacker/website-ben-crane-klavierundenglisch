@@ -166,7 +166,7 @@
 					>
 						Jetzt unverbindlich anfragen
 					</a>
-					<a
+					<!-- <a
 						href="tel:+491621926412"
 						class="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-[#1b365d] hover:text-[#1b365d]"
 					>
@@ -183,7 +183,7 @@
 							/></svg
 						>
 						+49 162 1926 412
-					</a>
+					</a> -->
 				</div>
 			</div>
 
